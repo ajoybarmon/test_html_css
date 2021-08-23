@@ -1,9 +1,12 @@
 body {
-  margin: 0;
+  margin: o;
   padding: 0;
-  background: #e84118;
+  font-family: sans-serif;
+  background: #34495e;
 }
-.search-box {
+.box {
+  width: 300px;
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12,42 +15,64 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  background: #384961;
-  height: 40px;
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
-  padding: 10px;
+  background: #191919;
+  text-align: center;
 }
-.search-btn {
-  color: #e84118;
-  float: right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  background: #465974;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
 }
-.search-txt {
-  border: none;
+.box input[type="text"],
+.box input[type="password"] {
+  border: 0;
   background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid rgb(4, 4, 218);
+  padding: 14px 10px;
+  width: 200px;
   outline: none;
-  float: left;
-  padding: 0;
-  color: rgb(248, 250, 249);
-  font-size: 16px;
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
-  line-height: 40px;
+  color: white;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  width: 280px;
+  border-color: rgb(16, 236, 236);
+}
+.box button[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid rgb(65, 250, 8);
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  cursor: pointer;
+}
+.box button[type="submit"]:hover {
+  background-color: rgb(240, 8, 220);
 }
